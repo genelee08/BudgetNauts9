@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>BudgetNauts</title>
+	<meta charset="utf-8">
+	<meta name = "viewport" content="device-width, initial-scale=1.0">
+	{{> cssStyles}}
+
+</head>
+
+<body>
+
+	<!--nav bar-->
+
+	{{> header}}
+
+	<a href="#" id = "button" class = "button">Edit Budget</a>
+
+
+<br>
+
+<table class="table table-bordered" id="table2">
+	<thead>
+		<tr>
+			<th id="budgetTh"><h1>Total Budget:</h1></th>
+			<th id="budgetTh"><h1>${{budget}}</h1></th>
+		</tr>
+	</thead>
+	<thead>
+		<tr>
+			<th id="budgetTh"><h1>Percent Saved:</h1></th>
+			<th id="budgetTh"><h1>{{savings}}%</h1></th>
+		</tr>
+	</thead>
+	<thead>
+		<tr>
+			<th id="budgetTh"><h1>You Will Save:</h1></th>
+			<th id="budgetTh"><h1>${{save}}</h1></th>
+		</tr>
+	</thead>
+  </table>
+
+
+	<div class = "bg-modal">
+	  <div class = "modal-content">
+	    <div class = "close">+</div>
+	    <form method = "get" action = "/edit" style="text-align: center">
+				<h3>
+					Enter your Budget here:
+	      	<input type = "text" placeholder="$" name="budget" id="appendBudget">
+				</h3>
+				<h3>
+					Enter the % you want to save here:
+					<input type = "text" placeholder="%" name="savings">
+				</h3>
+	      <input type ="submit" id = "add" class = "button"></input></a>
+	    </form>
+	  </div>
+	</div>
+
+{{> bootstrapFiles}}
+<script src="./js/menuButton.js"></script>
+<script src="./js/budget.js"></script>
+
+
+</body>
+</html>

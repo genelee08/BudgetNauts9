@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>BudgetNauts</title>
+	<link rel="shortcut icon" href ="images/batLogo2.png"/>
+	<meta charset="utf-8">
+	<meta name = "viewport" content="device-width, initial-scale=1.0">
+{{> cssStyles}}
+
+</head>
+
+<body>
+
+{{> header}}
+<div class="container">
+	<br>
+	<h1>Welcome to Budget Bat!</h1>
+	<br>
+
+    <div>
+
+    	<h1>Amount Left: </h1>
+<br>
+    	<span id="borderLeftover">{{leftover}}</span>
+
+    </div>
+    <br>
+</div>
+{{#if pageB}}  <div style = "float:right;">
+		<a href="#" id = "button" class = "button">+</a>
+	</div>
+	<div class = "bg-modal">
+				<div class = "modal-content">
+					<div class = "close">+</div>
+					<form method = "get" action = "/addHomeScreen" style="text-align: center">
+						<h1>+</h1>
+						<input type = "date" placeholder="Date" name="date">
+						<input type = "text" placeholder="Name" name="name">
+						<input type = "text" placeholder="Category" name="category">
+						<input type = "text" placeholder="Price" name="price">
+						<input type ="submit" id = "add" class = "button">
+					</form>
+				</div>
+			</div>
+
+	<script src="./js/menuButton.js"></script>
+	{{else}}{{/if}}
+
+
+
+{{> bootstrapFiles}}
+{{#if pageB}}<script src="./js/menuButton.js"></script>
+{{else}}{{/if}}
+
+<script src="./js/homeScreen.js"></script>
+<script src="./js/menuButton.js"></script>
+</body>
+</html>
