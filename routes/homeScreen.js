@@ -8,11 +8,11 @@ exports.view = function(request, response){
 
 exports.pageB = function(req,res){
 	data['pageB'] = true;
-	res.render('homeScreen', data);
+	res.render('index', data);
 };
 
 
 exports.pageA = function(req,res){
 	data['pageB'] = false;
-	res.render('homeScreen', data);
+	res.render('index', data);
 };
