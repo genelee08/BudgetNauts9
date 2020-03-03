@@ -14,7 +14,9 @@ function initializePage() {
  $.get('/data', amountLeft);
  $("#progress-bar").css("width", "50%");
  $("#progress-bar").attr("aria-valuenow", "50%");
-
+ $('#button').click(function(e){
+	 ga("send", "event", "homepage" , "click");
+ });
  }
 
 function amountLeft(result){

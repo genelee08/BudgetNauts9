@@ -274,10 +274,10 @@ padding-bottom: 1%;
 }
 #hideshow{
   margin-right: 2%;
-  bottom: 10px;
-  left: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
   z-index: 3;
-  position: fixed;
   align-items: center;
 }
 .close {
