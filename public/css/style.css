@@ -106,10 +106,7 @@ th{
   table#table2{
    width: 90%;
    margin-left: 19px;
-
-    z-index: -1;
-
-
+   z-index: -1;
   }
 
 
@@ -274,8 +271,8 @@ padding-bottom: 1%;
 }
 #hideshow{
   margin-right: 2%;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  bottom: 2%;
   right: 0;
   z-index: 3;
   align-items: center;

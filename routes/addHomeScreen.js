@@ -13,7 +13,7 @@ exports.addHomeExpense = function(request, response) {
 	var newEntry = {"date": date, "name": name, "category": category, "price": price};
 
 
-	data.purchase.push(newEntry);
+	data.purchase.unshift(newEntry);
 
 	response.render('homeScreen', data);
 
