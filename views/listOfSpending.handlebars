@@ -29,6 +29,19 @@
     <div style = "float:right;">
     		<a href="#" id = "button" class = "button">+</a>
     	</div>
+    	<div class = "bg-modal">
+    				<div class = "modal-content">
+    					<div class = "close">+</div>
+    					<form method = "get" action = "/addHomeScreen" style="text-align: center">
+    						<h1>+</h1>
+    						<input type = "date" placeholder="Date" name="date">
+    						<input type = "text" placeholder="Name" name="name">
+    						<input type = "text" placeholder="Category" name="category">
+    						<input type = "number" step="0.01" placeholder="Price" name="price">
+    						<input type ="submit" id = "add" class = "button">
+    					</form>
+    				</div>
+    			</div>
     <table class='table-striped ' id = "table1">
       <thead>
           <th>Date</th>
@@ -54,6 +67,7 @@
 {{> bootstrapFiles}}
 
 <script src="./js/listOfSpending.js"></script>
+<script src="./js/menuButton.js"></script>
 
 
 </body>

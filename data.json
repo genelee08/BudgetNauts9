@@ -6,7 +6,6 @@
 			"category": "Clothing",
 			"price": 15
 		},
-
 		{
 			"date": "2020-02-04",
 			"name": "Bus",
@@ -42,6 +41,7 @@
 			"price": 25
 
 		}
+
 	],
 
 	"budget": [500],
