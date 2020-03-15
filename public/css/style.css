@@ -272,7 +272,7 @@ padding-bottom: 1%;
 #hideshow{
   margin-right: 2%;
   position: fixed;
-  bottom: 2%;
+  top: 2%;
   right: 0;
   z-index: 3;
   align-items: center;
